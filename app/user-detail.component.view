@@ -1,3 +1,5 @@
+<!-- -*- mode: html -*- -->
+
 <h2>User Detail</h2>
 <div *ngIf="user">{{user.name}}</div>
 <a [routerLink]="['UserList']">返回</a>

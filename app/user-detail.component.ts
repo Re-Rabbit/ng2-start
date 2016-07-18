@@ -1,11 +1,11 @@
 import { Component, OnInit } from 'angular2/core'
 import { RouteParams, ROUTER_DIRECTIVES } from 'angular2/router'
-import { User, UserService } from './user.service'
+import { User, UserService } from './user.service.ts'
 
 const component = {
     selector: 'user-detail',
     directives: [ROUTER_DIRECTIVES],
-    templateUrl: 'app/user-detail.component.html'
+    templateUrl: 'app/user-detail.component.view'
 }
 
 @Component(component)

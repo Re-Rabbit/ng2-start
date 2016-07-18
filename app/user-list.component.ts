@@ -1,11 +1,11 @@
 import { Component, OnInit } from 'angular2/core'
-import { User, UserService } from './user.service'
-import { UserItemComponent } from './user-item.component'
+import { User, UserService } from './user.service.ts'
+import { UserItemComponent } from './user-item.component.ts'
 
 const component = {
     selector: 'user-list',
     directives: [UserItemComponent],
-    templateUrl: 'app/user-list.component.html'
+    templateUrl: 'app/user-list.component.view'
 }
 
 @Component(component)

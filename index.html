@@ -1,3 +1,4 @@
+{#
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,14 +8,14 @@
 
     <base href="/">
 
-    <!-- 1. Load libraries -->
+
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
 		
-    <!-- 2. Configure SystemJS -->		
+
     <script>
     System.config({
         packages: {
@@ -29,7 +30,26 @@
     </script>
   </head>
   <body>
-    <!-- Application root container. -->
+
     <my-app>Loading...</my-app>
   </body>
 </html>
+#}
+
+{% block content %}
+<base href="/">
+
+<main id="main">
+  <my-app>Loading...</my-app>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="/vendor.dll.js"></script>
+<script src="/tool.dll.js"></script>
+<script src="/commons.js"></script>
+<script src="ng2test/index.js"></script>
+{% endblock%}
+
+
+{% extends "tpls/page.html" %}

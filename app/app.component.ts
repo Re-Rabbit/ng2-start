@@ -1,8 +1,8 @@
 import { Component } from 'angular2/core'
 import { RouteConfig, ROUTER_DIRECTIVES, RouteDefinition } from 'angular2/router'
-import { UserListComponent } from './user-list.component'
-import { UserDetailComponent } from './user-detail.component'
-import { UserService } from './user.service'
+import { UserListComponent } from './user-list.component.ts'
+import { UserDetailComponent } from './user-detail.component.ts'
+import { UserService } from './user.service.ts'
 
 const component = {
     selector: 'my-app',

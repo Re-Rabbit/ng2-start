@@ -1,3 +1,5 @@
+<!-- -*- mode: html -*- -->
+
 <a *ngIf="!isEdit" [routerLink]="['UserDetail', {id: user.id}]">{{user.name}}</a>
 <input *ngIf="isEdit" [(ngModel)]="username" />
 <a *ngIf="!isEdit" (click)="beginEdit()">修改</a>
